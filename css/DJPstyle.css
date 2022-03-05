@@ -1,0 +1,221 @@
+/* Reset values */
+*{
+    box-sizing: boder-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/* This is the forst container of the page where the logo and navigation links are included*/
+.container{
+    display: flex;/* Flex allows the page to adapt to diferent display sizes*/
+    flex-wrap: wrap;
+}
+/* From C1 to C9 are the boxes used for each on the elements in the right and left containers*/
+.c1{
+    background-color: #2a607c;
+    width: 100%;
+    width: flex;
+    min-height: flex;
+}
+.c2{
+    background-color: #ffffff;
+    width: 100%;
+    min-width: flex;
+    height: flex;
+}
+.c3{
+    background-color: #0072bb;
+    min-width: flex;
+    min-height: 200px;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.c4{
+    background-color: #0072bb;
+    min-width: flex;
+    min-height: 200px;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.c5{
+    background-color: #0072bb;
+    min-width: flex;
+    min-height: 200px;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.c6{
+    background-color: #0072bb;
+    min-width: flex;
+    min-height: flex;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.c7{
+    background-color: #0072bb;
+    min-width: flex;
+    min-height: flex;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.c8{
+    background-color: #0072bb;
+    min-width: flex;
+    min-height: flex;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.c9{
+    background-color: #d5dfef;
+    width: 100%;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+/* @media allos the page to adapt depending on the size of the display, in this case I used only 1px and 200 px*/
+@media (min-width: 1px){
+    .padre1{
+        width: 100%;
+        order: 3;
+    }
+    .padre2{
+        width: 100%;
+        order: 4;
+    }
+    .c9{
+        order: 5;
+}
+@media (min-width: 200px){
+    .padre1{
+        width: 70%;
+    }
+    .padre2{
+        width: 30%;
+    }
+    .c9{
+        order: 5;
+    }
+
+/* Here are the stiled for anchor and paragraphd */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* float property places an element on the left or right side of its container, allowing text and inline elements to wrap around it */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* header styles */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* hero image style */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* services style */
+.service {
+    margin-bottom: 20px;
+    padding: 20px;
+    height: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.service img {
+   height: 150px;
+  }
+
+.service h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* This is the stile of benefits section styles */
+.benefit {
+    padding: 20px;
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefit img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+/* footer */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
